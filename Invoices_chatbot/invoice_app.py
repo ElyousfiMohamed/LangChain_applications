@@ -71,8 +71,7 @@ if OPENAI_API_KEY:
         return resp
 
 
-    def generate_response(query, file):
-        db = create_db_from_text(file)
+    def generate_response(query, db):
         res = get_response_from_query(db, query)
         return res
 
@@ -84,6 +83,7 @@ if OPENAI_API_KEY:
 
     if uploaded_file is not None:
         invoice = uploaded_file.read()
+        db = create_db_from_text(invoice)
         st.image(invoice, width=300, caption='Uploaded Invoice')
 
         if 'question' not in st.session_state:
@@ -100,7 +100,7 @@ if OPENAI_API_KEY:
             st.session_state['answer'] = []
 
         if question:
-            response = generate_response(question, file=invoice)
+            response = generate_response(question, db=db)
             st.session_state['question'].append(question)
             st.session_state['answer'].append(response)
 
