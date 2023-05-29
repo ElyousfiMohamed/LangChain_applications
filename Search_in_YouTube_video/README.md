@@ -4,6 +4,8 @@ This project is a Simple Streamlit chatbot, that talks with you about YouTube Vi
 
 ## Video Demo
 
+https://github.com/ElyousfiMohamed/LangChain_applications/assets/73071155/b62f4721-49dd-4cb6-ba43-4f36dffd943c
+
 ## Installation
 
 To run this project locally, follow these steps:
