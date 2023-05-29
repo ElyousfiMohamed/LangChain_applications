@@ -3,6 +3,8 @@
 This project is a Simple Streamlit chatbot, that talks with you and answer your questions about the invoices you provide.
 ## Video Demo
 
+https://github.com/ElyousfiMohamed/LangChain_applications/assets/73071155/6816598d-f673-4a25-ae91-d2e605e5ad5f
+
 ## Installation
 
 To run this project locally, follow these steps:
