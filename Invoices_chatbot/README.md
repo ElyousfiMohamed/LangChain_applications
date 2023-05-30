@@ -35,7 +35,7 @@ Using docker:
    docker pull elyousfi5/invoices_chatbot
    ```
    
-2. Run the container:
+2. Run the container (first time might take time):
 
    ```bash
    docker run -p 8501:8501 elyousfi5/invoices_chatbot
